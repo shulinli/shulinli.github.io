@@ -161,34 +161,19 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>#构造方法与内存（11月19日)<br><br></p>
+        <hr>
+<p>title: </p>
+<h2 id="构造方法与内存（11月19日"><a href="#构造方法与内存（11月19日" class="headerlink" title="构造方法与内存（11月19日)"></a>构造方法与内存（11月19日)</h2><p><br></p>
 <p>##构造方法与方法区别<br><br><br>&emsp;&emsp;<strong>构造方法</strong>是将给予这个类的对象进行初始化赋值，也称构造器。构造方法在编译时自动默认为无参的构造方法，无需定义。如需自己定义构造方法，需要制定参数，有参构造方法会覆盖无参方法，如果在有有参构造方法的情况下要使用无参构造方法，需要自己再次定义无参构造方法。  </p>
 <p>&emsp;&emsp;<strong>构造方法的重载</strong>与方法的重载基本相同。</p>
-<p>&emsp;&emsp;构造方法中的<strong>this</strong>指已经定义了的变量。</p>
-<p>##static静态 关键字<br>&emsp;&emsp;静态构造方法只能引用静态变量，不能引用动态变量。</p>
-<p><pre><br>class Point {<br>    double x, y;//对象的各种属性，可以是变量或者是方法<br>    public Point(double _x, double _y) {//<br>        x = _x;<br>        y = _y;<br>    }<br>    public double getDistance(Point p) {<br>        return Math.sqrt((x - p.x) <em> (x - p.x) + (y - p.y) </em> (y - p.y));<br>    }<br> }<br> public class TestConstructor {<br>    public static void main(String[] args) {   //z主方法执行区域，程序执行的入口<br>        Point p = new Point(3.0, 4.0);//在point类下建立一个新的对象，并且对这个对象进行赋初值<br>        Point origin = new Point(0.0, 0.0);<br>        System.out.println(origin.getDistance(p));<br>    }<br> } </pre><br><br></p>
-<pre><code>class Point {
-double x, y;//对象的各种属性，可以是变量或者是方法
-public Point(double _x, double _y) {//
-    x = _x;
-    y = _y;    
-}
-public double getDistance(Point p) {
-    return Math.sqrt((x - p.x) * (x - p.x) + (y - p.y) * (y - p.y));
-}
-}
-  public class TestConstructor {
-public static void main(String[] args) {   //z主方法执行区域，程序执行的入口
-    Point p = new Point(3.0, 4.0);//在point类下建立一个新的对象，并且对这个对象进行赋初值
-    Point origin = new Point(0.0, 0.0);
-    System.out.println(origin.getDistance(p));
-        }
- }
-</code></pre>
+<p>&emsp;&emsp;构造方法中的<strong>this</strong>指已经定义了的变量。<br>
+        
+          <a class="article-more-a" href="/2019/04/09/构造方法/#more">more >></a>
+        
       
 
       
-    </div>
+    </p></div>
     <div class="article-info article-info-index">
       
       
