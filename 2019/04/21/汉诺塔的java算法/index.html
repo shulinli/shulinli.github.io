@@ -8,19 +8,17 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>forry blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="title:  汉诺塔的java算法（11月19日)###汉诺塔的java算法&amp;emsp;&amp;emsp;jjjjjj。">
+  <meta name="description" content="title:  汉诺塔的java算法（11月19日)###汉诺塔的java算法 public class Recrusion { static int i = 0; static void hanoi(int n,char x,char y,char z) {      if(n==1) {         System.out.println(x+&amp;quot;&amp;gt;&amp;gt;&amp;quot;+z)">
 <meta property="og:type" content="article">
 <meta property="og:title" content="forry blog">
 <meta property="og:url" content="http://yoursite.com/2019/04/21/汉诺塔的java算法/index.html">
 <meta property="og:site_name" content="forry blog">
-<meta property="og:description" content="title:  汉诺塔的java算法（11月19日)###汉诺塔的java算法&amp;emsp;&amp;emsp;jjjjjj。">
+<meta property="og:description" content="title:  汉诺塔的java算法（11月19日)###汉诺塔的java算法 public class Recrusion { static int i = 0; static void hanoi(int n,char x,char y,char z) {      if(n==1) {         System.out.println(x+&amp;quot;&amp;gt;&amp;gt;&amp;quot;+z)">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="https://raw.githubusercontent.com/shulinli/shulinli.github.io/master/2019/04/21/汉诺塔的java算法/hanoi.JPG">
-<meta property="og:updated_time" content="2019-04-21T05:12:34.665Z">
+<meta property="og:updated_time" content="2019-04-21T05:17:50.559Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="forry blog">
-<meta name="twitter:description" content="title:  汉诺塔的java算法（11月19日)###汉诺塔的java算法&amp;emsp;&amp;emsp;jjjjjj。">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/shulinli/shulinli.github.io/master/2019/04/21/汉诺塔的java算法/hanoi.JPG">
+<meta name="twitter:description" content="title:  汉诺塔的java算法（11月19日)###汉诺塔的java算法 public class Recrusion { static int i = 0; static void hanoi(int n,char x,char y,char z) {      if(n==1) {         System.out.println(x+&amp;quot;&amp;gt;&amp;gt;&amp;quot;+z)">
   
     <link rel="alternative" href="/atom.xml" title="forry blog" type="application/atom+xml">
   
@@ -167,8 +165,34 @@
       
         <hr>
 <p>title: </p>
-<h2 id="汉诺塔的java算法（11月19日"><a href="#汉诺塔的java算法（11月19日" class="headerlink" title="汉诺塔的java算法（11月19日)"></a>汉诺塔的java算法（11月19日)</h2><p>###汉诺塔的java算法<br><br><br>&emsp;&emsp;jjjjj<br>j。<br><img src="https://raw.githubusercontent.com/shulinli/shulinli.github.io/master/2019/04/21/汉诺塔的java算法/hanoi.JPG" alt><br><a id="more"></a></p>
+<h2 id="汉诺塔的java算法（11月19日"><a href="#汉诺塔的java算法（11月19日" class="headerlink" title="汉诺塔的java算法（11月19日)"></a>汉诺塔的java算法（11月19日)</h2><p>###汉诺塔的java算法</p>
+<pre><code>public class Recrusion {
+static int i = 0;
+static void hanoi(int n,char x,char y,char z) {
 
+    if(n==1) {
+        System.out.println(x+&quot;&gt;&gt;&quot;+z);
+        i++;
+
+    }
+    else {
+        Recrusion.hanoi(n-1,x,z,y);
+        System.out.println(x+&quot;&gt;&gt;&quot;+z);
+        i++;
+        Recrusion.hanoi(n-1,y,x,z);
+    }
+}
+
+public static void main(String[] args) {
+    // TODO Auto-generated method stub
+
+    Recrusion.hanoi(10, &apos;A&apos;, &apos;B&apos;, &apos;C&apos;);
+    System.out.println(    i);
+
+}
+
+}
+</code></pre><a id="more"></a>
       
 
       
@@ -387,10 +411,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">音乐</a>
-              </li>
             
             <div class="clearfix"></div>
           </ul>
